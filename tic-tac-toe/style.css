@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, darkseagreen, darkslategray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 45vw;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='29' height='35' viewport='0 0 100 100' style='fill:black;font-size:17px;'><text y='50%'>✖️</text></svg>") 16 0, auto;
+}
+
+.card {
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    position: relative;
+}
+
+.refreshButton {
+    font-size: 3rem;
+    position: absolute;
+    margin-left: -80%;
+    margin-top: -35%;
+    cursor: grab;
+    color: aliceblue;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.eventsNone {
+    pointer-events: none;
+}
+
+.cursorCircle {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='29' height='35' viewport='0 0 100 100' style='fill:black;font-size:17px;'><text y='50%'>⚫</text></svg>") 16 0, auto;
+}
+
+.cursorX {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='29' height='35' viewport='0 0 100 100' style='fill:black;font-size:17px;'><text y='50%'>✖️</text></svg>") 16 0, auto;
+}
+
+/*XXOX de kazılan bolgeyi işaretlemek için kullanılacak çizgi*/
+.düzçizgi {
+    width: 65%;
+    height: 100%;
+    background-color: #005555;
+    border-radius: 10px;
+}
+
+.alignment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+/*Bütün containerlere alignment eklenecek*/
+.yatayContainer {
+    width: 40vw;
+    height: 1vh;
+}
+
+.dikeyContainer {
+    height: 30vh;
+    width: 2vh;
+    flex-direction: column;
+}
+
+.SagçaprazContainer {
+    height: 45vh;
+    width: 2vh;
+    flex-direction: column;
+    transform: rotate(51.2deg);
+}
+
+.SolçaprazContainer {
+    height: 40vh;
+    width: 2vh;
+    flex-direction: column;
+    transform: rotate(-51.2deg);
+}
