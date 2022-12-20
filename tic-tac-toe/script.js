@@ -30,13 +30,13 @@ function WinTheGame() {
     let cards = document.querySelectorAll(".card");
     let newContents = document.querySelectorAll(".card p i[class]");
     let contents = document.querySelectorAll(".card p i");
-    let yatay =
+    let yatay2 =
         `
-    <div class="yatayContainer alignment">
+    <div class="yatayContainer2 alignment">
         <div class="düzçizgi"></div>
     </div>
     `;
-    let dikey =
+    let dikey2 =
         `
     <div class="dikeyContainer alignment">
         <div class="düzçizgi"></div>
@@ -55,90 +55,58 @@ function WinTheGame() {
     </div>
     `;
     if ((contents[0].classList.contains("fa-xmark")) && (contents[1].classList.contains("fa-xmark")) && (contents[2].classList.contains("fa-xmark"))) {
-        cards[0].insertAdjacentHTML("beforeend", yatay);
-        cards[1].insertAdjacentHTML("beforeend", yatay);
-        cards[2].insertAdjacentHTML("beforeend", yatay);
+        cards[1].insertAdjacentHTML("beforeend", yatay2);
         WonX();
     }
     else if ((contents[3].classList.contains("fa-xmark")) && (contents[4].classList.contains("fa-xmark")) && (contents[5].classList.contains("fa-xmark"))) {
-        cards[3].insertAdjacentHTML("beforeend", yatay);
-        cards[4].insertAdjacentHTML("beforeend", yatay);
-        cards[5].insertAdjacentHTML("beforeend", yatay);
+        cards[4].insertAdjacentHTML("beforeend", yatay2);
         WonX();
     }
     else if ((contents[6].classList.contains("fa-xmark")) && (contents[7].classList.contains("fa-xmark")) && (contents[8].classList.contains("fa-xmark"))) {
-        cards[6].insertAdjacentHTML("beforeend", yatay);
-        cards[7].insertAdjacentHTML("beforeend", yatay);
-        cards[8].insertAdjacentHTML("beforeend", yatay);
+        cards[7].insertAdjacentHTML("beforeend", yatay2);
         WonX();
     }
     else if ((contents[0].classList.contains("fa-xmark")) && (contents[3].classList.contains("fa-xmark")) && (contents[6].classList.contains("fa-xmark"))) {
-        cards[0].insertAdjacentHTML("beforeend", dikey);
-        cards[3].insertAdjacentHTML("beforeend", dikey);
-        cards[6].insertAdjacentHTML("beforeend", dikey); WonX();
+        cards[3].insertAdjacentHTML("beforeend", dikey2); WonX();
     }
     else if ((contents[1].classList.contains("fa-xmark")) && (contents[4].classList.contains("fa-xmark")) && (contents[7].classList.contains("fa-xmark"))) {
-        cards[1].insertAdjacentHTML("beforeend", dikey);
-        cards[4].insertAdjacentHTML("beforeend", dikey);
-        cards[7].insertAdjacentHTML("beforeend", dikey); WonX();
+        cards[4].insertAdjacentHTML("beforeend", dikey2); WonX();
     }
     else if ((contents[2].classList.contains("fa-xmark")) && (contents[5].classList.contains("fa-xmark")) && (contents[8].classList.contains("fa-xmark"))) {
-        cards[2].insertAdjacentHTML("beforeend", dikey);
-        cards[5].insertAdjacentHTML("beforeend", dikey);
-        cards[8].insertAdjacentHTML("beforeend", dikey); WonX();
+        cards[5].insertAdjacentHTML("beforeend", dikey2); WonX();
     }
     else if ((contents[0].classList.contains("fa-xmark")) && (contents[4].classList.contains("fa-xmark")) && (contents[8].classList.contains("fa-xmark"))) {
-        cards[0].insertAdjacentHTML("beforeend", solçapraz);
-        cards[4].insertAdjacentHTML("beforeend", solçapraz);
-        cards[8].insertAdjacentHTML("beforeend", solçapraz); WonX();
+        cards[4].insertAdjacentHTML("beforeend", solçapraz); WonX();
     }
     else if ((contents[2].classList.contains("fa-xmark")) && (contents[4].classList.contains("fa-xmark")) && (contents[6].classList.contains("fa-xmark"))) {
-        cards[2].insertAdjacentHTML("beforeend", sağCapraz);
-        cards[4].insertAdjacentHTML("beforeend", sağCapraz);
-        cards[6].insertAdjacentHTML("beforeend", sağCapraz); WonX();
+        cards[4].insertAdjacentHTML("beforeend", sağCapraz); WonX();
     }
     else if ((contents[0].classList.contains("fa-circle")) && (contents[1].classList.contains("fa-circle")) && (contents[2].classList.contains("fa-circle"))) {
-        cards[0].insertAdjacentHTML("beforeend", yatay);
-        cards[1].insertAdjacentHTML("beforeend", yatay);
-        cards[2].insertAdjacentHTML("beforeend", yatay);
+        cards[1].insertAdjacentHTML("beforeend", yatay2);
         WonCircle();
     }
     else if ((contents[3].classList.contains("fa-circle")) && (contents[4].classList.contains("fa-circle")) && (contents[5].classList.contains("fa-circle"))) {
-        cards[3].insertAdjacentHTML("beforeend", yatay);
-        cards[4].insertAdjacentHTML("beforeend", yatay);
-        cards[5].insertAdjacentHTML("beforeend", yatay);
+        cards[4].insertAdjacentHTML("beforeend", yatay2);
         WonCircle();
     }
     else if ((contents[6].classList.contains("fa-circle")) && (contents[7].classList.contains("fa-circle")) && (contents[8].classList.contains("fa-circle"))) {
-        cards[6].insertAdjacentHTML("beforeend", yatay);
-        cards[7].insertAdjacentHTML("beforeend", yatay);
-        cards[8].insertAdjacentHTML("beforeend", yatay);
+        cards[7].insertAdjacentHTML("beforeend", yatay2);
         WonCircle();
     }
     else if ((contents[0].classList.contains("fa-circle")) && (contents[3].classList.contains("fa-circle")) && (contents[6].classList.contains("fa-circle"))) {
-        cards[0].insertAdjacentHTML("beforeend", dikey);
-        cards[3].insertAdjacentHTML("beforeend", dikey);
-        cards[6].insertAdjacentHTML("beforeend", dikey); WonCircle();
+        cards[3].insertAdjacentHTML("beforeend", dikey2); WonCircle();
     }
     else if ((contents[1].classList.contains("fa-circle")) && (contents[4].classList.contains("fa-circle")) && (contents[7].classList.contains("fa-circle"))) {
-        cards[1].insertAdjacentHTML("beforeend", dikey);
-        cards[4].insertAdjacentHTML("beforeend", dikey);
-        cards[7].insertAdjacentHTML("beforeend", dikey); WonCircle();
+        cards[4].insertAdjacentHTML("beforeend", dikey2); WonCircle();
     }
     else if ((contents[2].classList.contains("fa-circle")) && (contents[5].classList.contains("fa-circle")) && (contents[8].classList.contains("fa-circle"))) {
-        cards[2].insertAdjacentHTML("beforeend", dikey);
-        cards[5].insertAdjacentHTML("beforeend", dikey);
-        cards[8].insertAdjacentHTML("beforeend", dikey); WonCircle();
+        cards[5].insertAdjacentHTML("beforeend", dikey2); WonCircle();
     }
     else if ((contents[0].classList.contains("fa-circle")) && (contents[4].classList.contains("fa-circle")) && (contents[8].classList.contains("fa-circle"))) {
-        cards[0].insertAdjacentHTML("beforeend", solçapraz);
-        cards[4].insertAdjacentHTML("beforeend", solçapraz);
-        cards[8].insertAdjacentHTML("beforeend", solçapraz); WonCircle();
+        cards[4].insertAdjacentHTML("beforeend", solçapraz); WonCircle();
     }
     else if ((contents[2].classList.contains("fa-circle")) && (contents[4].classList.contains("fa-circle")) && (contents[6].classList.contains("fa-circle"))) {
-        cards[2].insertAdjacentHTML("beforeend", sağCapraz);
-        cards[4].insertAdjacentHTML("beforeend", sağCapraz);
-        cards[6].insertAdjacentHTML("beforeend", sağCapraz); WonCircle();
+        cards[4].insertAdjacentHTML("beforeend", sağCapraz); WonCircle();
     }
     else if (newContents.length == 9) {
         window.alert("Draw");
